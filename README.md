@@ -13,4 +13,4 @@ How do I use it?
 - To Remove a pool of objects simply call 'Pool.Remove(GameObject)' with the desired Prefab as the main arg, this will clear all inactive instances of the target object from the pool, any active instances will be simply be Destroyed when Pool.Despawn is called on them.
 - Additionally an interface called 'ISpawnable' can be implemented into any class and the OnSpawn and OnDespawn methods will be called when Spawning and Despawning an instance. This can be used for resetting values, physics, etc. to their default values between uses.
 
-* - Denotes optional arguments.
+\* - Denotes optional arguments.
