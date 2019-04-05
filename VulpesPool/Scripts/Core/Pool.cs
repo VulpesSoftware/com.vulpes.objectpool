@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 namespace Vulpes.Pooling
 {
     [AddComponentMenu("Vulpes/Core/Pool"), DisallowMultipleComponent, DefaultExecutionOrder(-99)]
-    public sealed class Pool : Singleton<Pool>
+    public sealed class Pool : MonoBehaviour
     {
         private const int DEFAULT_POOL_SIZE = 8;
 
@@ -13,6 +13,13 @@ namespace Vulpes.Pooling
         private Dictionary<int, int> keyDictionary = new Dictionary<int, int>();
 
         [SerializeField] private bool destroyUnpooledObjects = false;
+
+        public static Pool Instance { get; private set; }
+
+        private void Awake()
+        {
+            Instance = this as Pool;
+        }
 
         public static void Add(GameObject akPrefab, int aiCount = DEFAULT_POOL_SIZE)
         {
