@@ -6,8 +6,7 @@ What's this?
 - It's a lightweight Object Pooling solution for games and apps being developed using Unity.
 
 What can I do with the code?
-- You can pretty much do whatever you want with the code provided here, just don't go trying to sell it, that's kind of a shitty thing to do given that I've released it here for free.
-- You're welcome to integrate it into larger projects and/or frameworks if you want, you're not expected to release your entire code base as a result of integrating this into a larger project or collection of code, that would be a bit silly.
+- Whatever you want.
 
 How do I use it?
 - This Pooling solution is designed to operate in a fire and forget fashion, to add it to your Unity Project simply clone or copy the 'VulpesPool' folder and its contents into your Project's 'Assets' folder.
