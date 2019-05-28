@@ -1,0 +1,20 @@
+{
+  "name": "com.vulpes.objectpool",
+  "displayName": "Vulpes Pooling",
+  "version": "1.0.0",
+  "unity": "2019.1",
+  "description": "A lightweight Object Pooling solution for Unity.",
+  "keywords": [
+    "vulpes",
+    "pooling",
+    "object",
+    "pool"
+  ],
+  "license": "Unlicense",
+  "author": {
+    "name": "TybeeFox",
+    "email": "tylahheil@gmail.com",
+    "url": "https://prettystatemachine.blog/"
+  },
+  "dependencies": {}
+}

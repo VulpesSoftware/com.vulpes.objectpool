@@ -1,4 +1,4 @@
-namespace Vulpes.Pooling
+﻿namespace Vulpes.Pooling
 {
     public interface ISpawnable 
     {

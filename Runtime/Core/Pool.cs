@@ -1,14 +1,14 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Vulpes.Pooling
 {
-    [AddComponentMenu("Vulpes/Core/Pool"), DisallowMultipleComponent, DefaultExecutionOrder(-99)]
+    [AddComponentMenu("Vulpes/Pooling/Pool"), DisallowMultipleComponent, DefaultExecutionOrder(-99)]
     public sealed class Pool : MonoBehaviour
     {
         private const int DEFAULT_POOL_SIZE = 8;
-
+        
         private Dictionary<int, Queue<GameObject>> poolDictionary = new Dictionary<int, Queue<GameObject>>();
         private Dictionary<int, int> keyDictionary = new Dictionary<int, int>();
 
@@ -96,7 +96,7 @@ namespace Vulpes.Pooling
         {
             Remove(akPrefab.gameObject);
         }
-
+        
         public static GameObject Spawn(GameObject akPrefab, Vector3 avPosition = default, Quaternion aqRotation = default, Transform akParent = null)
         {
             int poolKey = akPrefab.GetInstanceID();
