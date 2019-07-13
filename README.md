@@ -2,12 +2,18 @@
 
 A lightweight Object Pooling solution for Unity.
 
-<b>Getting Started</b>
+<b>Getting Started: Importing From a Local Repo</b>
 - Clone or download the repo to your local machine
 - Open up your Unity Project
 - Open the Package Manager window by navigating to 'Window/Package Manager'
 - Click on the '+' icon button and 'Add package from disk...'
 - Navigate to wherever you installed the local repo and select the 'package.json' file.
+
+<b>Getting Started: Importing via Git</b>
+- Navigate to the root folder of your Unity Project in Finder (Mac) or Explorer (Windows).
+- Open the 'Packages' folder and open the 'manifest.json' file.
+- Add '"com.vulpes.objectpool": "https://github.com/VulpesSoftware/com.vulpes.objectpool.git#1.0.0",' to the dependencied list.
+- Reopen your Unity Project and if all goes well the package should import.
 
 <b>How do I use it?</b>
 - This Pooling solution is designed to operate in a fire and forget fashion.
