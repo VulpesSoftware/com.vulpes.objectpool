@@ -1,8 +1,8 @@
 {
   "name": "com.vulpes.objectpool",
   "displayName": "Vulpes Pooling",
-  "version": "1.0.2",
-  "unity": "2019.1",
+  "version": "1.0.3",
+  "unity": "2019.2",
   "description": "A lightweight Object Pooling solution for Unity.",
   "keywords": [
     "vulpes",
@@ -14,7 +14,7 @@
   "author": {
     "name": "Vulpes Software",
     "email": "tylahheil@gmail.com",
-    "url": "https://github.com/VulpesSoftware"
+    "url": "https://vulpessoftware.com"
   },
   "dependencies": {}
 }

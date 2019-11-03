@@ -6,3 +6,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.0] - 2019-05-28
 This is the first release of *Vulpes Pooling* as a Package.
+
+## [1.0.3] - 2019-11-03
+Folder Restructure.
