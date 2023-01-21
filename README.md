@@ -1,21 +1,18 @@
-<b>Vulpes Pooling</b>
+# Vulpes Pooling
 
 A lightweight Object Pooling solution for Unity.
 
-<b>Getting Started: Importing From a Local Repo</b>
-- Clone or download the repo to your local machine
-- Open up your Unity Project
-- Open the Package Manager window by navigating to 'Window/Package Manager'
-- Click on the '+' icon button and 'Add package from disk...'
-- Navigate to wherever you installed the local repo and select the 'package.json' file.
+As of version 1.0.0 of this package, you are now able to install it, along with other Vulpes Software packages via the Unity Package Manager. 
 
-<b>Getting Started: Importing via Git</b>
-- Navigate to the root folder of your Unity Project in Finder (Mac) or Explorer (Windows).
-- Open the 'Packages' folder and open the 'manifest.json' file.
-- Add '"com.vulpes.objectpool": "https://github.com/VulpesSoftware/com.vulpes.objectpool.git#1.0.0",' to the dependencied list.
-- Reopen your Unity Project and if all goes well the package should import.
+In Unity 2019 LTS and Unity 2020 onwards you can install the package through 'Project Settings/Package Manager'. Under 'Scoped Registries' click the little '+' button and input the following into the fields on the right.
 
-<b>How do I use it?</b>
+*Name:* Vulpes Software
+*URL:* https://registry.npmjs.org
+*Scope(s):* com.vulpes
+
+Click 'Apply', now you should be able to access the Vulpes Software registry under the 'My Registries' section in the Package Manager window using the second dropdown in the top left.
+
+## How do I use this package?
 - This Pooling solution is designed to operate in a fire and forget fashion.
 - To create a pool of objects simply call 'Pool.Add(GameObject, int*)' with the desired Prefab as the main arg and optionally the number of instances to generate in the pool (for example you may want to add projectiles to the pool based on a weapon's fire rate for optimal results).
 - To spawn an object simply call 'Pool.Spawn(GameObject, Vector3*, Quaternion*, Transform*)' with the desired Prefab as the main arg, you can opptionally specify a position, rotation, and parent transform.
